@@ -4,9 +4,14 @@ spring:
             - dev
 ---
 server:
-    port: 1202
+    port: 2101
 
 spring:
     profiles: dev
     application:
         name: eureka-consumer
+
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:1002/eureka/
